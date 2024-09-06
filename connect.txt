@@ -1,0 +1,28 @@
+Check wlan
+nmcli radio wifi
+
+Enable wlan
+nmcli radio wifi on
+
+List SSID/wifi
+nmcli device wifi rescan
+nmcli device wifi list
+
+Connect
+sudo nmcli dev wifi connect "AAC Domain" password "owo20232"
+sudo nmcli dev wifi connect "AAC Domain" --ask
+
+Show
+nmcli connection show
+
+LAN
+sudo nmcli connection modify 'Wired connection 1' ipv4.addresses 192.168.0.100/24
+sudo nmcli connection up 'Wired connection 1'
+
+Optional LAN (Add before up)
+sudo nmcli connection modify 'Wired connection 1' ipv4.gateway 192.168.0.1
+sudo nmcli connection modify 'Wired connection 1' ipv4.dns 8.8.8.8
+sudo nmcli connection modify 'Wired connection 1' ipv4.method manual
+
+LAN DHCP
+sudo nmcli connection modify 'Wired connection 1' ipv4.method auto

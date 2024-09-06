@@ -1,0 +1,230 @@
+{
+    "host": "0.0.0.0",
+    "port": 5000,
+    "model": {
+        "path": "Model/model.engine",
+        "mAP": 93.2,
+        "precision": 94.9,
+        "recall": 87.1,
+        "matrix": "static/img/metrics/confusion_matrix.png"
+    },
+    "default": {
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 80,
+        "population": 25,
+        "area": 100,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30.0,
+        "divider": 6
+    },
+    "cam": {
+        "array": [
+            192,
+            108,
+            1728,
+            108,
+            1728,
+            972,
+            192,
+            972
+        ],
+        "confidence": 0.45,
+        "iou": 0.5,
+        "area": 5,
+        "density": 4.7
+    },
+    "footage1": {
+        "array": [],
+        "path": "static/video/footage.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 80,
+        "area": 100
+    },
+    "footage2": {
+        "array": [
+            0,
+            329,
+            1920,
+            273,
+            1920,
+            922,
+            0,
+            1074
+        ],
+        "path": "static/video/footage2.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 200,
+        "area": 100
+    },
+    "footage3": {
+        "array": [
+            142,
+            0,
+            890,
+            0,
+            1454,
+            1080,
+            290,
+            1080
+        ],
+        "path": "static/video/footage3.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 200,
+        "area": 100
+    },
+    "test1": {
+        "array": [],
+        "path": "static/video/test1.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 120,
+        "area": 100
+    },
+    "test2": {
+        "array": [],
+        "path": "static/video/test2.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 120,
+        "area": 100
+    },
+    "test3": {
+        "array": [],
+        "path": "static/video/test3.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 120,
+        "area": 100
+    },
+    "postcam": {
+        "array": [],
+        "path": "static/video/webcam_clean.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "max_crowd": 4,
+        "crowd_distance": 120,
+        "area": 100
+    },
+    "day1": {
+        "array": [
+            470,
+            135,
+            1459,
+            178,
+            1920,
+            410,
+            1920,
+            1080,
+            0,
+            1080,
+            0,
+            324
+        ],
+        "path": "static/video/day1.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "area": 163.5,
+        "density": 4.7
+    },
+    "day2": {
+        "array": [
+            470,
+            135,
+            1459,
+            178,
+            1920,
+            410,
+            1920,
+            1080,
+            0,
+            1080,
+            0,
+            324
+        ],
+        "path": "static/video/day2.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "area": 163.5,
+        "density": 4.7
+    },
+    "day3_1": {
+        "array": [
+            0,
+            135,
+            345,
+            30,
+            1302,
+            30,
+            1336,
+            259,
+            0,
+            972
+        ],
+        "array2": [
+            0,
+            135,
+            345,
+            30,
+            1302,
+            30,
+            1920,
+            324,
+            1920,
+            1080,
+            0,
+            1080
+        ],
+        "path": "static/video/day3_1.mp4",
+        "confidence": 0.05,
+        "iou": 0.5,
+        "area": 7.2,
+        "area2": 24,
+        "density": 4.7
+    },
+    "day3_2": {
+        "array": [
+            170,
+            239,
+            766,
+            0,
+            1459,
+            453,
+            729,
+            950
+        ],
+        "path": "static/video/day3_2.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "area": 39.6,
+        "density": 4.7
+    },
+    "day3_3": {
+        "array": [
+            192,
+            180,
+            1478,
+            210,
+            1478,
+            551,
+            192,
+            521
+        ],
+        "path": "static/video/day3_3.mp4",
+        "confidence": 0.45,
+        "iou": 0.5,
+        "area": 12.74,
+        "density": 4.7
+    }
+}

@@ -1,0 +1,83 @@
+<!-- Modal -->
+<div
+    class="modal fade"
+    id="modalShutdown"
+    tabindex="-1"
+    aria-labelledby="modalShutdownLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalShutdownLabel">
+                    Confirmation
+                </h1>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to shutdown Jetson Nano?
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button
+                    type="button"
+                    id="shutdownDevice"
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalShutdownResponse"
+                >
+                    Shutdown
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Response -->
+<div
+    class="modal fade"
+    id="modalShutdownResponse"
+    tabindex="-1"
+    aria-labelledby="modalShutdownResponseLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalShutdownResponseLabel">
+                    Shutting down...
+                </h1>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                Jetson Nano is now shutting down. This page is no longer
+                working.
+            </div>
+            <!-- <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+            </div> -->
+        </div>
+    </div>
+</div>

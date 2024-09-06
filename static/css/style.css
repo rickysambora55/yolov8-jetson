@@ -1,0 +1,143 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eeeeee !important;
+    /* background-image: url("img/bg.jpg"); */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    /* max-height: 85vh; */
+}
+
+.mg-top {
+    margin-top: 85px;
+    min-height: 75vh;
+}
+
+.video-container {
+    min-height: 100px;
+}
+
+#webcamSpinner {
+    display: none;
+    z-index: 1;
+}
+
+#webcamVideo {
+    z-index: 10;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #6c757d !important;
+    color: #fff !important;
+}
+
+button.nav-link {
+    color: #6c757d;
+}
+
+button.nav-link:focus,
+button.nav-link:hover {
+    color: #000;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+.form-check-input:focus {
+    background-color: transparent;
+    border-color: #fff;
+    color: #d3d3d3b4;
+}
+
+.form-check-input[type="checkbox"]:checked,
+.form-check-label::before {
+    background-color: #6c757d;
+    border-color: #5b5e61;
+}
+
+.metric-title {
+    font-size: 14px;
+}
+
+.param-title {
+    font-size: 14px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+}
+
+.card-gradient {
+    background-image: linear-gradient(to right, #3881ee00, #ffffff94);
+}
+
+.progress {
+    height: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.team-list {
+    list-style: none; /* Remove default bullet points */
+}
+
+.team-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.bi-question-circle {
+    font-size: 12px;
+}
+
+.profile-picture-person1 {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/person1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-picture-person2 {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/person2.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mata {
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.margin-login {
+    margin-top: 85px;
+}
+
+/*
+.logo {
+    font-size: 36px;
+}
+*/

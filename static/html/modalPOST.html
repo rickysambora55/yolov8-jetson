@@ -1,0 +1,56 @@
+<!-- Confirmation Modal -->
+<div
+    class="modal fade"
+    id="confirmationModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalPOSTLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ModalPOSTLabel">
+                    Confirm Settings
+                </h1>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to apply these settings?</p>
+                <ul>
+                    <li>IoU: <span id="modalIoU"></span></li>
+                    <li>Confidence: <span id="modalConfidence"></span></li>
+                    <li>Area: <span id="modalPopulation"></span></li>
+                    <li>Max. Density: <span id="modalDensity"></span></li>
+                    <li>Zone: <span id="modalZone"></span></li>
+                </ul>
+                <p>
+                    Service need to be restarted before this setting will take
+                    effect. Restart will begin shortly after confirming.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button
+                    type="button"
+                    id="confirmConfigSubmit"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                >
+                    Save and restart
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

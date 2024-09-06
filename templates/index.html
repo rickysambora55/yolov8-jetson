@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+
+        <link
+            rel="shortcut icon"
+            href="{{ url_for('static', filename='img/favicon.ico') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='icons/font/bootstrap-icons.min.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+        />
+    </head>
+
+    <body>
+        <!-- <div
+            class="alert alert-info alert-dismissible fade show px-0"
+            role="alert"
+        >
+            <marquee>
+                <strong>Info!</strong> Login dengan username
+                <strong>monitor</strong> dan password <strong>crowd123</strong>.
+                Akun ini dikhususkan sebagai uji coba.
+            </marquee>
+        </div> -->
+        <div class="container">
+            <div
+                class="col-lg-5 mx-auto margin-login shadow-lg p-4 bg-white rounded"
+            >
+                <div
+                    div
+                    class="alert alert-danger alert-dismissible fade d-none"
+                    id="login-error"
+                    role="alert"
+                >
+                    <strong>Error!</strong> {{msg}}
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                    ></button>
+                </div>
+
+                <div class="text-center">
+                    <div class="mb-4 align-text-center">
+                        <img
+                            src="{{ url_for('static', filename='img/logo.png') }}"
+                            width="92"
+                            height="auto"
+                            class="d-inline-block mr-1"
+                        />
+                        <!-- <span class="font-weight-bold text-white text-uppercase logo">Panel</span> -->
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="col-lg-12 text-start pb-2">
+                        <form action="{{ url_for('index') }}" method="POST">
+                            <div class="mb-3 position-relative">
+                                <!-- <div class="mb-1 form-title">Username</div> -->
+                                <input
+                                    type="text"
+                                    class="form-control form-control-lg"
+                                    id="inputName"
+                                    placeholder="Username"
+                                    name="username"
+                                />
+                            </div>
+
+                            <div class="mb-3 position-relative">
+                                <!-- <div class="mb-1 form-title">Password</div> -->
+                                <input
+                                    type="password"
+                                    class="form-control form-control-lg"
+                                    id="inputPass"
+                                    placeholder="Password"
+                                    name="password"
+                                />
+                                <i
+                                    class="bi bi-eye-fill mata d-none d-sm-block text-secondary"
+                                    id="togglePassword"
+                                ></i>
+                            </div>
+
+                            <div>
+                                <button
+                                    class="btn mx-auto btn-login btn-lg w-100 fw-bold bg-secondary text-white"
+                                    type="submit"
+                                    id="submit-login"
+                                    value="login"
+                                    name="login"
+                                >
+                                    Login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const togglePassword =
+                    document.querySelector("#togglePassword");
+                const password = document.querySelector("#inputPass");
+                const alert = document.querySelector("#login-error");
+                const msg = "{{msg}}";
+
+                if (msg.length > 0) {
+                    alert.classList.add("show");
+                    alert.classList.remove("d-none");
+                }
+
+                togglePassword.addEventListener("click", function (e) {
+                    // toggle the type attribute
+                    const type =
+                        password.getAttribute("type") === "password"
+                            ? "text"
+                            : "password";
+                    password.setAttribute("type", type);
+                    // toggle the eye slash icon
+                    this.classList.toggle("bi-eye-slash-fill");
+                });
+            });
+        </script>
+    </body>
+</html>
