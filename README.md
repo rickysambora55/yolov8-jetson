@@ -35,4 +35,5 @@ I also include several files that might be useful:
 
 ## Citation
 This project is made using my dataset on [Roboflow](https://universe.roboflow.com/ricky-sambora/crowd-detection-7suou/). If you're planning to use this project as is or to use my model/dataset, please kindly cite this paper:<br>
-_Publish in progress_
+DOI: https://doi.org/10.18517/ijaseit.15.1.20327
+E. D. Wardihani, “Human Detection System Using Machine Learning to Calculate Crowd Potential”, Int. J. Adv. Sci. Eng. Inf. Technol., vol. 15, no. 1, pp. 60–66, Feb. 2025.
